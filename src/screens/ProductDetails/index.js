@@ -145,13 +145,15 @@ export class ProductDetails extends Component {
   };
 
   setQuantity = (quantity, unit) => {
-    if (!!unit) {
-      (unit == 'kg' || unit == 'lit') && Number(quantity) > 0
-        ? this.setState({quantity: parseFloat(quantity).toFixed(3).toString()})
-        : (unit == 'gm' || unit == 'quantity') && Number(quantity) > 0
-        ? this.setState({quantity: parseInt(quantity).toFixed(0).toString()})
-        : !!quantity && this.setState({quantity: '0'});
-    } else this.setState({quantity: '0'});
+    console.log(quantity, ' ', unit);
+    this.setState({quantity: quantity});
+    // if (!!unit) {
+    // (unit == 'Kilogram' || unit == 'lit') && Number(quantity) > 0
+    //   ? this.setState({quantity: parseFloat(quantity).toFixed(3).toString()})
+    //   : (unit == 'gm' || unit == 'quantity') && Number(quantity) > 0
+    //   ? this.setState({quantity: parseInt(quantity).toFixed(0).toString()})
+    //   : !!quantity && this.setState({quantity: '0'});
+    // } else this.setState({quantity: '0'});
   };
 
   getProductDetails = () => {

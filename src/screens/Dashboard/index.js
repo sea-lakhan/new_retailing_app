@@ -191,7 +191,7 @@ export class Dashboard extends Component {
       showLoader => this.setState({showLoader}),
       false,
       async response => {
-        console.log(response);
+        console.log(response.result);
         this.setState({categories: response.result});
       },
     );

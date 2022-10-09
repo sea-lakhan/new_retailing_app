@@ -200,14 +200,14 @@ export default class Cart extends Component {
             <Text
               style={{
                 fontSize: 15,
-                color: colors.white,
+                color: colors.prime,
                 fontWeight: '800',
                 marginLeft: 5,
               }}>{`${item.rating} Rating`}</Text>
           </View>
           <View style={{flexDirection: 'row', alignItems: 'baseline'}}>
             <Text
-              style={{fontSize: 20, fontWeight: 'bold', color: colors.white}}>
+              style={{fontSize: 20, fontWeight: 'bold', color: colors.prime}}>
               &#8377; {item.price}
             </Text>
             <Text
@@ -220,7 +220,7 @@ export default class Cart extends Component {
               &#8377;{`${item.discount} off`}
             </Text>
           </View>
-          <Text style={{fontSize: 15, fontWeight: '700', color: colors.white}}>
+          <Text style={{fontSize: 15, fontWeight: '700', color: colors.prime}}>
             Quantity
           </Text>
           <View
@@ -236,13 +236,13 @@ export default class Cart extends Component {
                 justifyContent: 'center',
                 borderWidth: 2,
                 borderRadius: 5,
-                borderColor: colors.white,
+                borderColor: colors.prime,
               }}
               onPress={() => this.decreaseQuantity(item._id)}>
               <Icon
                 name="remove"
                 size={20}
-                color={colors.white}
+                color={colors.prime}
                 style={{fontWeight: 'bold'}}
               />
             </TouchableOpacity>
@@ -250,7 +250,7 @@ export default class Cart extends Component {
               style={{
                 fontSize: 15,
                 fontWeight: '800',
-                color: colors.white,
+                color: colors.prime,
                 marginHorizontal: 10,
               }}>
               {item.quantity}
@@ -262,13 +262,13 @@ export default class Cart extends Component {
                 justifyContent: 'center',
                 borderWidth: 2,
                 borderRadius: 5,
-                borderColor: colors.white,
+                borderColor: colors.prime,
               }}
               onPress={() => this.increaseQuantity(item._id)}>
               <Icon
                 name="add"
                 size={20}
-                color={colors.white}
+                color={colors.prime}
                 style={{fontWeight: 'bold'}}
               />
             </TouchableOpacity>
@@ -287,12 +287,12 @@ export default class Cart extends Component {
                 paddingVertical: 5,
                 justifyContent: 'center',
                 alignItems: 'center',
-                backgroundColor: colors.white,
+                backgroundColor: colors.prime,
                 borderRadius: 40,
               }}
               onPress={() => this.removeCartItem(item._id)}>
               <Text
-                style={{fontSize: 15, fontWeight: '500', color: colors.prime}}>
+                style={{fontSize: 15, fontWeight: '500', color: colors.white}}>
                 Remove
               </Text>
             </TouchableOpacity>
@@ -562,7 +562,7 @@ export default class Cart extends Component {
                       style={{
                         fontSize: 18,
                         fontWeight: '600',
-                        color: colors.white,
+                        color: colors.prime,
                       }}>
                       Total mrp of ({cartItemsForOrder.length}) products{' '}
                     </Text>
@@ -570,7 +570,7 @@ export default class Cart extends Component {
                       style={{
                         fontSize: 18,
                         fontWeight: '600',
-                        color: colors.white,
+                        color: colors.prime,
                       }}>
                       &#8377;{total.toFixed(2)}
                     </Text>
@@ -589,7 +589,7 @@ export default class Cart extends Component {
                       style={{
                         fontSize: 18,
                         fontWeight: '600',
-                        color: colors.white,
+                        color: colors.prime,
                       }}>
                       Discount
                     </Text>
@@ -616,7 +616,7 @@ export default class Cart extends Component {
                       style={{
                         fontSize: 18,
                         fontWeight: '600',
-                        color: colors.white,
+                        color: colors.prime,
                       }}>
                       Total Amount
                     </Text>
@@ -624,7 +624,7 @@ export default class Cart extends Component {
                       style={{
                         fontSize: 18,
                         fontWeight: '600',
-                        color: colors.white,
+                        color: colors.prime,
                       }}>
                       &#8377;
                       {(
